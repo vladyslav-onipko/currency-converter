@@ -14,8 +14,8 @@ export const CurrencyContext = createContext({
 });
 
 export const CyrrencyContextProvider = ({ children }) => {
-  const [amountFrom, setAmountFrom] = useState(1);
-  const [amountTo, setAmountTo] = useState(1);
+  const [amountFrom, setAmountFrom] = useState(0);
+  const [amountTo, setAmountTo] = useState(0);
   const [currencyFrom, setCurrencyFrom] = useState('UAH');
   const [currencyTo, setCurrencyTo] = useState('USD');
 

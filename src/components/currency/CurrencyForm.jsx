@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 
 import CurrencyGroup from './CurrencyGroup';
 import Spinner from '../ui/base/Spinner';
@@ -57,13 +57,6 @@ const CurrencyForm = () => {
       </>
     );
   }
-
-  // Calculate default currency value
-  useEffect(() => {
-    if (data && data.rates) {
-      amountFromChangeHandler(1, data.rates);
-    }
-  }, [data, amountFromChangeHandler]);
 
   return (
     <div className="flex justify-center items-center gap-x-[50px] w-full h-full flex-wrap sm:gap-y-[30px]">
